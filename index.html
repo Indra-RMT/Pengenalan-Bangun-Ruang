@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/images/icon.png">
+  <title>Bangun Ruang</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#pengenalan">Pengenalan</a></li>
+        <li><a href="#soal-latihan">Soal Latihan</a></li>
+      </ul>
+    </nav>
+    <div id="content-header">
+      <div id="header-image-left">
+        <img src="assets/images/math.jpg" class="header-image" alt="image-math">
+      </div>
+      <div id="header-text-right">
+        <div>
+          <h2>
+            Selamat Datang,
+            <br>
+            Mari Kita <span>Belajar</span> Tiga Macam <span>Bangun Ruang</span>,
+            <br>
+            Yaitu Kerucut, Kubus, dan Tabung.
+          </h2>
+          <br>
+          <button onclick="location.href='#pengenalan'" class="button">
+            YUK MULAI
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="content">
+      <article id="pengenalan" class="card">
+        <h2>Bangun Ruang</h2>
+        <p>Ketika kalian belajar pelajaran matematika kalian pasti akan mendengar beberapa istilah salah satunya bangun
+          ruang. Istilah yang satu ini tentu sudah tidak asing lagi di telinga. Namun kalian tentunya kurang paham betul
+          mengenai sebenarnya apa itu bangun ruang seperti pengertiannya maupun macam-macamnya. Berikut ini adalah
+          penjelasan singkatnya mengenai bangun ruang tersebut.
+        </p>
+        <p>
+          Sebenarnya bangun ruang itu merupakan sebuah sebutan untuk bangunan-bangunan yang memiliki bentuk tiga dimensi
+          atau sebuah bangunan yang mana ruang yang ada memiliki batas oleh sisi-sisinya. Adapun untuk macam-macam
+          bangun ruang tersebut terdapat 7 macam jenisnya, tiga diantaranya yaitu:
+        </p>
+        <div class="container-box" id="pilihBangunRuang">
+          <div class="box">
+            <div class="header-box" style="background-color: rgba(250, 232, 61, 1);">
+              Kerucut
+            </div>
+            <div>
+              <img src="assets/images/bangun-kerucut2.png" class="image-box" alt="kerucut">
+            </div>
+            <!-- <div class="footer-box">
+            </div> -->
+          </div>
+          <div class="box">
+            <div class="header-box" style="background-color: rgba(0, 175,240, 1);">
+              Kubus
+            </div>
+            <div>
+              <img src="assets/images/Gambar-Kuubus.jpg" class="image-box" alt="kubus">
+            </div>
+            <!-- <div class="footer-box">
+            </div> -->
+          </div>
+          <div class="box">
+            <div class="header-box" style="background-color: rgba(194, 158, 70, 1);">
+              Tabung
+            </div>
+            <div>
+              <img src="assets/images/bangun-tabung2.png" class="image-box" alt="tabung">
+            </div>
+            <!-- <div class="footer-box">
+            </div> -->
+          </div>
+        </div>
+        <h3>Kerucut</h3>
+        <p>
+          Bangun ruang yang pertama yaitu kerucut. Kerucut merupakan salah satu bangun yang memiliki alas dengan bentuk
+          lingkaran dengan selimut yang mana
+          selimut tersebut memiliki irisan dari lingkaran. Adapun beberapa sifat dari kerucut ini adalah memiliki 2
+          sisi, 1 rusuk dan 1 titik sudut.
+          <br>
+          Rumus Volume = 1/3 ∏ r<sup>2</sup> t
+        </p>
+        <h3>Kubus</h3>
+        <p>
+          Bangun ruang yang kedua yaitu kubus di mana bangun ini panjang rusuknya sama dan mana sisinya berjumlah enam
+          buah sisi yang sama serta sebangun. Bangun ini juga merupakan sebuah bangun ruang 3 dimensi. Bangun ini
+          memiliki sisi (6 buah), rusuk (12 buah) dan titik sudut (8 buah).
+          <br>
+          Rumus Volume: s<sup>3</sup>
+        </p>
+        <h3>Tabung</h3>
+        <p>Bangun ruang yang ketiga yaitu tabung di mana merupakan sebuah bangun ruang berbentuk 3 dimensi dengan tutup
+          dan alas sebuah lingkaran dengan memiliki ukuran yang sama serta selimutnya berbentuk persegi panjang. Adapun
+          beberapa sifat dari tabung tersebut seperti memiliki 3 sisi serta 2 rusuk.
+          <br>
+          Rumus Volume : Volume = ∏ r<sup>2</sup> t
+        </p>
+
+        <br>
+        <div class="overflow">
+          sumber: <a href="https://blog.ub.ac.id/halovan/2019/11/03/bangun-ruang/"
+            target="_blank"><cite>https://blog.ub.ac.id/halovan/2019/11/03/bangun-ruang/</cite></a>
+        </div>
+
+      </article>
+      <article id="soal-latihan" class="card">
+        <h2>Soal Latihan</h2>
+
+        <div class="container-box-2" id="soalBangunRuang">
+          <div class="box-2" id="gambarSoalKerucut">
+            <img src="assets/images/kerucut.png" class="image-box" alt="kerucut">
+          </div>
+          <div class="soalKerucut double">
+
+            Berapa volume kerucut jika diketahui jari-jari kerucut adalah <span id="rKerucut"></span> dan tinggi <span
+              id="tKerucut"></span> ?
+
+            <br>
+
+            <input type="radio" id="jawabanAKerucut" name="xKerucut" onclick="pilihJawabanKerucut('jawabanAKerucut')">
+            <label></label><br>
+            <input type="radio" id="jawabanBKerucut" name="xKerucut" onclick="pilihJawabanKerucut('jawabanBKerucut')">
+            <label></label><br>
+            <input type="radio" id="jawabanCKerucut" name="xKerucut" onclick="pilihJawabanKerucut('jawabanCKerucut')">
+            <label></label>
+            <br>
+            <button class="button-jawab" onclick="klikJawab('kerucut')">Jawab</button>
+            <span class="hasil-jawaban" id="hasilJawabanKerucut">
+            </span>
+          </div>
+        </div>
+        <div class="container-box-2" id="soalBangunRuang">
+          <div class="box-2" id="gambarSoalKerucut">
+            <img src="assets/images/kubus.png" class="image-box" alt="kerucut">
+          </div>
+          <div class="soalKerucut double">
+
+            Berapa volume kubus jika diketahui panjang sisi kubus adalah : <span id="sisiKubus"></span> ?
+
+            <br>
+
+            <input type="radio" id="jawabanAKubus" name="xKubus" onclick="pilihJawabanKubus('jawabanAKubus')">
+            <label></label><br>
+            <input type="radio" id="jawabanBKubus" name="xKubus" onclick="pilihJawabanKubus('jawabanBKubus')">
+            <label></label><br>
+            <input type="radio" id="jawabanCKubus" name="xKubus" onclick="pilihJawabanKubus('jawabanCKubus')">
+            <label></label>
+            <br>
+            <button class="button-jawab" onclick="klikJawab('kubus')">Jawab</button>
+            <span class="hasil-jawaban" id="hasilJawabanKubus">
+          </div>
+        </div>
+        <div class="container-box-2" id="soalBangunRuang">
+          <div class="box-2" id="gambarSoalKerucut">
+            <img src="assets/images/tabung2.png" class="image-box" alt="kerucut">
+          </div>
+          <div class="soalKerucut double">
+
+            Berapa volume tabung jika diketahui jari-jari tabung adalah : <span id="rTabung"></span> dan tinggi :
+            <span id="tTabung"></span>
+
+            <br>
+
+            <input type="radio" id="jawabanATabung" name="xTabung" onclick="pilihJawabanTabung('jawabanATabung')">
+            <label></label><br>
+            <input type="radio" id="jawabanBTabung" name="xTabung" onclick="pilihJawabanTabung('jawabanBTabung')">
+            <label></label><br>
+            <input type="radio" id="jawabanCTabung" name="xTabung" onclick="pilihJawabanTabung('jawabanCTabung')">
+            <label></label>
+            <br>
+            <button class="button-jawab" onclick="klikJawab('tabung')">Jawab</button>
+            <span class="hasil-jawaban" id="hasilJawabanTabung">
+          </div>
+        </div>
+      </article>
+      <article></article>
+    </div>
+    <aside>
+      <article class="card overflow">
+        <table>
+          <tbody>
+            <tr>
+              <td>Nama</td>
+              <td>:</td>
+              <td>Indra Rahmanto</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>:</td>
+              <td>indra.anto42@gmail.com</td>
+            </tr>
+            <tr>
+              <td> No.tlp</td>
+              <td>:</td>
+              <td>0822 9901 8189</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </aside>
+  </main>
+
+  <footer>
+    Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy (Bangun Ruang - Indra Rahmanto)
+  </footer>
+
+  <script src="assets/js/web-page.js"></script>
+</body>
+
+</html>
